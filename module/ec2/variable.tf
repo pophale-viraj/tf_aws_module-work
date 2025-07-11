@@ -1,7 +1,7 @@
-variable "instancetype" {
- type = "string" 
+variable "instance_type" {
+ type = string
 }
 
-variable "instancecount" {
+variable "instance_count" {
  type = number 
 }
