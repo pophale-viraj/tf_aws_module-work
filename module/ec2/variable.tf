@@ -5,3 +5,7 @@ variable "instance_type" {
 variable "instance_count" {
  type = number 
 }
+
+variable "aws_region" {
+  type = string
+}

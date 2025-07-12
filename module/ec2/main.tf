@@ -24,8 +24,8 @@ data "aws_ami" "amazon-linux-3" {
   }
 }
 
-resource "aws_instance" "myinstance" {
+resource "aws_instance" "my-instance" {
+  instance_type = var.instance_type
+  count = var.instance_count
   ami           = data.aws_ami.amazon-linux-3.id
-  instancetype = var.instance_type
-  instancecount = var.instance_count
 }
